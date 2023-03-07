@@ -1,0 +1,31 @@
+.navigation {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.navigation .btn-primary,
+.btn-confirm {
+  margin-left: auto;
+}
+
+@media (max-width: 828px) {
+  .navigation {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 669px) {
+  .navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--White);
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+}

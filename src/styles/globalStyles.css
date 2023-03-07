@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+html {
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Marine-blue-hover: hsla(213, 72%, 31%, 1);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Purplish-blue-hover: hsla(243, 100%, 77%, 1);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--Magnolia);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 669px) {
+  body {
+    display: block;
+    height: 100%;
+  }
+}

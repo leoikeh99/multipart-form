@@ -1,0 +1,78 @@
+.summary {
+  width: 100%;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  background-color: var(--Alabaster);
+  border-radius: 8px;
+  list-style: none;
+  margin-top: 2.5rem;
+}
+
+summary li p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.summary li p:first-child {
+  color: var(--Cool-gray);
+}
+
+.summary li p:last-child {
+  color: var(--Marine-blue);
+}
+
+.summary li:first-child {
+  padding-bottom: 1.5rem;
+  padding-top: 0;
+}
+
+.summary li:first-child p {
+  font-size: 1rem;
+  color: var(--Marine-blue);
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.summary li:first-child p.darker {
+  font-weight: 700;
+}
+
+.summary button {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--Cool-gray);
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.summary li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.summary li:nth-child(2) {
+  border-top: 1px solid var(--Light-gray);
+}
+
+.total {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total p:first-child {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--Cool-gray);
+}
+
+.total p:last-child {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--Purplish-blue);
+}

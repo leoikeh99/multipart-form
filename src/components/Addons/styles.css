@@ -1,0 +1,67 @@
+.addons {
+  margin-top: 2.5rem;
+}
+
+.addon {
+  width: 100%;
+  height: 5rem;
+  border: 1px solid var(--Light-gray);
+  border-radius: 8px;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem 1.25rem 1.5rem;
+  text-align: left;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addon:hover {
+  border: 1px solid var(--Purplish-blue);
+}
+
+.addon .name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--Marine-blue);
+  margin-bottom: 7px;
+}
+
+.addon .desc {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--Cool-gray);
+}
+
+.addon div {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.addon .price {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--Purplish-blue);
+}
+
+.addon.checked {
+  background-color: var(--Alabaster);
+  border: 1px solid var(--Purplish-blue);
+}
+
+@media (max-width: 669px) {
+  .addon .name {
+    font-size: 0.88rem;
+  }
+
+  .addon div {
+    gap: 1rem;
+  }
+
+  .addon {
+    padding: 0.7rem 1rem 0.8rem 1rem;
+  }
+}

@@ -1,0 +1,116 @@
+.plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.1rem;
+  margin-top: 2.5rem;
+}
+
+.plan {
+  width: 8.6rem;
+  padding: 1.25rem 0 1rem 1rem;
+  border: 1px solid var(--Light-gray);
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.plan.selected {
+  border-color: var(--Purplish-blue);
+  background-color: var(--Alabaster);
+}
+
+.plan img {
+  margin-bottom: 2.4rem;
+}
+
+.plan .name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--Marine-blue);
+  margin-bottom: 0.4rem;
+}
+
+.plan .yearly {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--Marine-blue);
+  margin-top: 6px;
+}
+
+.plan .price {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--Cool-gray);
+}
+
+.plan:hover {
+  border-color: var(--Purplish-blue);
+}
+
+.plan-type {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 2rem;
+  background-color: var(--Alabaster);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.plan-type p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--Cool-gray);
+}
+
+.switcher {
+  height: 1.25rem;
+  width: 2.4rem;
+  border-radius: 10px;
+  background-color: var(--Marine-blue);
+  border: none;
+  cursor: pointer;
+}
+
+.switcher::after {
+  content: "";
+  display: inline-block;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--White);
+  margin-top: 2.5px;
+  transform: translateX(-8px);
+  transition: transform ease-in 0.1s;
+}
+
+.switch::after {
+  transform: translateX(8px);
+}
+
+@media (max-width: 828px) {
+  .plan {
+    display: flex;
+    width: 100%;
+    padding: 0.7rem 0 0.9rem 1rem;
+    gap: 0.9rem;
+    margin-bottom: 0.5rem;
+    align-self: flex-start;
+  }
+
+  .plans {
+    display: block;
+  }
+
+  .plan img {
+    margin: 0;
+  }
+
+  .plan-type {
+    margin-top: 0.5rem;
+  }
+}
