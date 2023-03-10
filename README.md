@@ -31,7 +31,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Personal Info](./screenshots/1.png)
+![Personal Info Validated](./screenshots/2.png)
+![Addons](./screenshots/3.png)
+![Summary](./screenshots/4.png)
 
 ### Links
 
