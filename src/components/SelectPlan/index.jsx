@@ -18,7 +18,7 @@ const SelectPlan = ({ selectedPlan, setPlan, subType, toggleSubType }) => {
           <button
             key={plan.option}
             type="button"
-            className={`plan ${plan.option === selectedPlan && "selected"}`}
+            className={`plan ${plan.option === selectedPlan ? "selected" : ""}`}
             onClick={() => setPlan(plan.option)}>
             <img
               src={
@@ -46,7 +46,7 @@ const SelectPlan = ({ selectedPlan, setPlan, subType, toggleSubType }) => {
         <button
           type="button"
           onClick={toggleSubType}
-          className={`switcher ${subType === "yr" && "switch"}`}
+          className={`switcher ${subType === "yr" ? "switch" : ""}`}
         />
         <p>Yearly</p>
       </div>

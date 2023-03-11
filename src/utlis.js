@@ -7,22 +7,20 @@ const validateEmail = (email) => {
 };
 
 function validatePhoneNumber(phoneNumber) {
-  // Remove any non-digit character from the input string
-  const cleaned = phoneNumber.replace(/\D/g, "");
+  // Regular expression pattern to match a valid phone number with country code
+  const pattern = /^\+\d{1,3}\d{3}\d{3}\d{3}$/;
 
-  // Check if the cleaned phone number is a valid format for Nigeria or international format
-  const isNigerianPhoneNumber = /^(?:\+234|0)[789][01]\d{8}$/.test(cleaned);
-  const isInternationalPhoneNumber = /^\+(?:[0-9]●?){6,14}[0-9]$/.test(cleaned);
-  const isValidPhoneNumber =
-    isNigerianPhoneNumber || isInternationalPhoneNumber;
-
-  return isValidPhoneNumber;
+  // Test the phone number against the pattern
+  return pattern.test(`+${phoneNumber}`);
 }
 
 export const validate = (values) => {
   const errors = {};
   if (!values.name) {
     errors.name = "This field is required";
+  }
+  if (/[^a-zA-Z]/g.test(values.name) === true) {
+    errors.name = "Name invalid";
   }
   if (!values.email) {
     errors.email = "This field is required";

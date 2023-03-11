@@ -56,7 +56,7 @@ const PersonalInfo = () => {
                 <input
                   className={`${meta.error && meta.touched && "error"}`}
                   {...input}
-                  type="text"
+                  type="number"
                   placeholder="e.g. +1 234 567 890"
                 />
               </>
