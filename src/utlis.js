@@ -19,7 +19,7 @@ export const validate = (values) => {
   if (!values.name) {
     errors.name = "This field is required";
   }
-  if (/[^a-zA-Z]/g.test(values.name) === true) {
+  if (/[^a-zA-Z\s]/g.test(values.name) === true) {
     errors.name = "Name invalid";
   }
   if (!values.email) {
